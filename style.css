@@ -1,0 +1,172 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0; 
+	padding: 0;
+	background-image: url("background.png");
+}
+h2{
+	font-size:20px;
+	font-family:Tahoma;
+	color:#e2e2e2;
+	clear:both;
+	text-shadow:0px 3px 1px black;
+}
+h3{
+	font-weight:normal;
+	font-family:Tahoma;
+	color:#e2e2e2;
+	text-shadow:0px 1px 1px black;
+}
+/* HEAD */
+.head{
+	width:100%;
+	height:80px;
+	background-color:#191919;
+	box-shadow: 0px 10px 30px 10px black;
+}
+.title{
+	font-family:Times New Roman;
+	color:#e2e2e2;
+	font-size:60px;
+	padding-top:10px;
+	text-align:center;
+	text-shadow:0px 2px 5px black;
+}
+/* LEAFLET */
+.location{
+	width:400px;
+	height:400px;
+	border:1px solid white;
+	float:left;
+}
+.drop_map{
+	width:400px;
+	height:400px;
+	border:1px solid white;
+	margin-left:4.5%;
+	float:left;
+}
+.puzzle_map{
+	width:419px;
+	height:419px;
+	border:1px solid white;
+	float:left;
+	margin-left:4.5%;
+}
+button{
+	width:200px;
+	height:30px;
+	background-color:red;
+	color:white;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+	margin:5px;
+}
+.geoloc{
+	clear:both;
+	background-color:green;
+}
+.raster{
+	background-color:green;
+}
+.puzzle{
+}
+.shuffle{
+	width:800px;
+	height:210px;
+	margin:0 auto;
+}
+.puzzle_element{
+	width:100px;
+	height:100px;
+	float:left;
+	font-size: 0;
+}
+.puzzle_location{
+	width:100px;
+	height:100px;
+	margin:2px;
+	float:left;
+}
+/* MAIN */
+.middle{
+	width:100%;
+	height:910px;
+	clear:both;
+	padding-right:550px;
+	margin-left:10%;
+}
+.main{
+	width:1490px;
+	height:100%;
+}
+.Whole_art{
+	width:100%;
+	font-family:Tahoma;
+	text-align:center;
+	background-image: url("art_bg.png");
+	margin-top:25px;
+	color:#e2e2e2;
+	padding:4%;
+	border:5px solid black;
+	opacity: 0.85;
+}
+/* FOOT */
+.foot{
+	padding-top:5px;
+	width:100%;
+	height:50px;
+	background-color:#191919;
+	box-shadow: 0px -10px 30px 10px black;
+}
+.author{
+	text-align:center;
+	text-shadow:0px 0px 5px black;
+	font-family:Times New Roman;
+	color:#e2e2e2;
+}
+/* SCALING */ /* SCALING */ /* SCALING */ /* SCALING */ /* SCALING */ /* SCALING */ /* SCALING */ 
+/* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ /* ADV */ 
+
+/**/
+/* HEAD */
+@media only screen and (max-width: 675px) {
+.title{
+	font-size:45px;
+}
+.middle{
+	height:900px;
+}
+}
+@media only screen and (max-width: 650px) {
+.title{
+	font-size:40px;
+}
+}
+@media only screen and (max-width: 600px) {
+.title{
+	font-size:35px;
+}
+.middle{
+	height:850px;
+}
+}
+@media only screen and (max-width: 525px) {
+.head{
+	height:90px;
+}
+h2{
+	font-size:25px;
+}
+h3{
+	font-size:17px;
+}
+.Whole_art{
+	font-size:13px;
+}
+.middle{
+	height:750px;
+}
+}

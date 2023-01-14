@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Laboratoria 4</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+	integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+	crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+<script src="leaflet-image.js"></script>
+<script src="puzzle.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header class="head">
+<div class="title">Puzzle</div>
+</header>
+
+<section class="middle">
+	<article class="main">
+		<div class="Whole_art">
+			<p class="notification" id="nofi"></p>
+			
+			<div class="location" id="geo"></div>
+
+			<div class="puzzle_map" id="puzzle_map">
+			<div class="puzzle_location" id="lp0" ondrop="drop(event)" ondragover="allowDrop(event)" value="AaA" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp3" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp4" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp5" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp6" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp7" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp8" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp9" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp10" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp11" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp12" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp13" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp14" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			<div class="puzzle_location" id="lp15" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			</div>
+			
+			<img src="placeholder.png" class="drop_map" id="drop_map">
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			
+			<button class="geoloc" 
+			id="geobutt">Moja lokalizacja</button>
+			<button class="raster" 
+			id="rasbutt">Pobierz mapę</button>
+			<button class="puzzle" 
+			id="puzzbutt">Puzzle</button>
+			
+			<div class="shuffle" id="puzzles">
+			<div class="puzzle_element" id="rp1" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp2" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp3" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp4" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp5" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp6" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp7" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp8" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp9" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp10" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp11" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp12" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp13" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp14" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp15" ondragstart="drag(event)"></div>
+			<div class="puzzle_element" id="rp16" ondragstart="drag(event)"></div>
+			</div>
+		</div>
+	</article>
+</section>
+
+<footer class="foot">
+<div class="author">
+Author: Bartosz Sobański
+<br>
+Aplikacje Internetowe 1
+</div>
+</footer>
+
+</body>
+</html>
+
